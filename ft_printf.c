@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:35:57 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/20 19:03:31 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/25 17:58:00 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ int	conv(va_list args, const char caract)
 		type_conv += ft_putnbr(va_arg(args, int));
 	else if (caract == 'u')
 		type_conv += ft_unsigned(va_arg(args, unsigned int));
-	else if (caract == 'x' || caract == 'X')
-		type_conv += ft_hex(va_arg(args, unsigned int), caract);
+	else if (caract == 'x')
+		type_conv += ft_hexlower(va_arg(args, unsigned int));
+	else if (caract == 'X')
+		type_conv += ft_hexupper(va_arg(args, unsigned int));
 	else if (caract == 'p')
 		type_conv += ft_putptr(va_arg(args, unsigned long long));
 	else if (caract == '%')

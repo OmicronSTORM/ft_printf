@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_lib.h                                        :+:      :+:    :+:   */
+/*   ft_char_percent.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 14:36:58 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/25 18:05:00 by jowoundi         ###   ########.fr       */
+/*   Created: 2024/11/20 17:44:11 by jowoundi          #+#    #+#             */
+/*   Updated: 2024/11/25 16:16:18 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINT_LIB
-# define PRINT_LIB
+#include "print_lib.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
-# include <string.h>
-# include <stdarg.h>
+int	ft_putchar(int c)
+{
+	write(1, &c, 1);
+	return (1);
+}
 
-int		ft_putchar(int c);
-int		ft_printf(const char *str, ...);
-int		ft_percent(void);
-int		ft_putstr(char	*str);
-int		ft_putnbr(int nb);
-int		ft_hexlower(unsigned int nb);
-int		ft_hexupper(unsigned int nb);
-int		ft_unsigned(unsigned int nb);
-
-#endif
+int	ft_percent(void)
+{
+	write(1, "%", 1);
+	return (1);
+}

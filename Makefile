@@ -6,13 +6,13 @@
 #    By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 14:20:21 by jowoundi          #+#    #+#              #
-#    Updated: 2024/11/20 19:03:58 by jowoundi         ###   ########.fr        #
+#    Updated: 2024/11/25 16:14:16 by jowoundi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = print_lib.a
 
-SRC = ft_printf.c ft_char&percent.c
+SRC = ft_printf.c ft_char_percent.c ft_putstr.c ft_number.c
 
 OBJS =	$(SRC:.c=.o)
 
