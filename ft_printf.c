@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:35:57 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/25 17:58:00 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/26 15:33:57 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	conv(va_list args, const char caract)
 {
 	int	type_conv;
-	
+
 	type_conv = 0;
 	if (caract == 'c')
 		type_conv += ft_putchar(va_arg(args, int));
@@ -38,8 +38,8 @@ int	conv(va_list args, const char caract)
 
 int	ft_printf(const char *str, ...)
 {
-	int	i;
-	int	print;
+	int		i;
+	int		print;
 	va_list	args;
 
 	i = 0;
@@ -59,3 +59,18 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (print);
 }
+
+// int main()
+// {
+// 	int c = 'c';
+// 	char *s = "Bonjour";
+// 	int d = 9;
+// 	int i = 456;
+// 	unsigned int u = 3489487165;
+// 	unsigned int x = 683744;
+// 	unsigned long long p = 683744;
+// 	ft_printf("Ma reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n
+				// %X\n %p\n %%\n\n", c, s, d, i, u, x, x, p);
+	// printf("Repones de printf :\n %c\n %s\n %d\n %i\n %u\n 
+				// %x\n %X\n %p\n %%\n\n", c, s, d, i, u, x, x, p);
+// }

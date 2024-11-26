@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:11:55 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/25 18:04:36 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/26 15:13:36 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	ft_hexlower(unsigned int nb)
 
 int	ft_hexupper(unsigned int nb)
 {
-	char *hex;
+	char	*hex;
 
 	hex = "0123456789ABCDEF";
 	if (nb == -2147483648)
