@@ -6,11 +6,11 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:21:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/26 17:39:40 by jowoundi         ###   ########.fr       */
+/*   Updated: 2024/11/27 15:55:49 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "print_lib.h"
+#include "ft_printf.h"
 
 int	ft_putstr(char	*str)
 {
