@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:35:57 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/27 17:50:36 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/08 18:12:35 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int	ft_printf(const char *str, ...)
 	i = 0;
 	print = 0;
 	if (!str)
-		return (0);
+		return (-1);
 	va_start(args, str);
 	while (str[i])
 	{
@@ -62,17 +62,23 @@ int	ft_printf(const char *str, ...)
 	return (print);
 }
 
+// int	main()
+// {
+// 	printf("%d\n", ft_printf(NULL));
+// 	printf("%d\n", printf(NULL));
+// 	return (0);
+// }
 // int main()
 // {
 // 	int c = 'c';
 // 	char *s = "Bonjour";
 // 	int d = -4;
 // 	int i = -456;
-// 	unsigned int u = 348948716535435353534;
+// 	unsigned int u = 34893534;
 // 	unsigned int x = 1658;
 // 	unsigned long long p = 1658;
-// 	ft_printf("Ma reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n 
+// 	ft_printf("Ma reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n \
 // 				%X\n %p\n %%\n\n", c, s, d, i, u, x, x, p);
-// 	printf("Repones de printf :\n %c\n %s\n %d\n %i\n %u\n 
+// 	printf("Repones de printf :\n %c\n %s\n %d\n %i\n %u\n \
 // 				%x\n %X\n %p\n %%\n\n", c, s, d, i, u, x, x, p);
 // }

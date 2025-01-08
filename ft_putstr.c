@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:21:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2024/11/27 15:55:49 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/08 18:07:57 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,12 @@ int	ft_putstr(char	*str)
 
 int	ft_putptr(unsigned long long ptr)
 {
-	write(1, "0x", 2);
-	ft_hexlower(ptr);
+	if (!ptr)
+		ptr = ft_putstr("(nil)");
+	else
+	{
+		write(1, "0x", 2);
+		ft_hexlower(ptr);	
+	}
 	return (ptr);
 }
