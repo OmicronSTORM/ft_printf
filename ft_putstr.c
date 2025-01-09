@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:21:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/09 14:26:12 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/09 19:09:52 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putstr(char	*str)
 
 	i = 0;
 	if (!str)
-		return (0);
+		return (write(1, "(null)", 6));
 	while (str[i])
 	{
 		write(1, &str[i], 1);
@@ -27,14 +27,18 @@ int	ft_putstr(char	*str)
 	return (i);
 }
 
-int	ft_putptr(unsigned long long ptr)
+int	ft_putptr(unsigned long ptr)
 {
+	int	count;
+
+	count = 0;
 	if (!ptr)
-		ptr = ft_putstr("(nil)");
+		return (ft_putstr("(nil)"));
 	else
 	{
 		write(1, "0x", 2);
-		ft_hexlower(ptr);
+		count += 2;
+		count += ft_hexlower(ptr);
 	}
-	return (ptr);
+	return (count);
 }
