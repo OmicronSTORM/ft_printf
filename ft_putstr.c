@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:21:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/09 19:09:52 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/15 15:52:31 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,19 @@ int	ft_putstr(char	*str)
 	return (i);
 }
 
+unsigned long	ft_hexlong(unsigned long nb)
+{
+	unsigned long		count;
+	char	*hex;
+
+	count = 0;
+	hex = "0123456789abcdef";
+	if (nb >= 16)
+		count += ft_hexlong(nb / 16);
+	count += ft_putchar(hex[nb % 16]);
+	return (count);
+}
+
 int	ft_putptr(unsigned long ptr)
 {
 	int	count;
@@ -38,7 +51,7 @@ int	ft_putptr(unsigned long ptr)
 	{
 		write(1, "0x", 2);
 		count += 2;
-		count += ft_hexlower(ptr);
+		count += ft_hexlong(ptr);
 	}
 	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:11:55 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/09 18:56:08 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/15 15:48:14 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ int	ft_unsigned(unsigned int nb)
 	return (count);
 }
 
-int	ft_hexlower(unsigned long nb)
+int	ft_hexlower(unsigned int nb)
 {
 	int		count;
 	char	*hex;
