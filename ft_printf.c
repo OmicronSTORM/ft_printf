@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:35:57 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/15 15:48:18 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/17 14:14:53 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,13 +62,6 @@ int	ft_printf(const char *str, ...)
 	return (print);
 }
 
-// int	main()
-// {
-// 	unsigned long p = 21448;
-// 	printf("%d\n", ft_printf("%p\n", p));
-// 	printf("%d\n", printf("%p\n", p));
-// 	return (0);
-// }
 // int main()
 // {
 // 	int c = 'c';
@@ -78,8 +71,8 @@ int	ft_printf(const char *str, ...)
 // 	unsigned int u = 34893534;
 // 	unsigned int x = 1658;
 // 	unsigned long p = 1658;
-// 	ft_printf("Reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n %X\n
-				//  %p\n %%\n\n", c, s, d, i, u, x, x, &p);
-// 	printf("Reponse de printf :\n %c\n %s\n %d\n %i\n %u\n %x\n %X\n
-				//  %p\n %%\n\n", c, s, d, i, u, x, x, &p);
+// 	printf("%d---\n", ft_printf("Reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n
+// 								 %X\n %p\n %%\n\n", c, s, d, i, u, x, x, &p));
+// 	printf("%d---\n", printf("Reponse :\n %c\n %s\n %d\n %i\n %u\n %x\n
+// 								 %X\n %p\n %%\n\n", c, s, d, i, u, x, x, &p));
 // }

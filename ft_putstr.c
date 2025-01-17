@@ -6,7 +6,7 @@
 /*   By: jowoundi <jowoundi@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 15:21:03 by jowoundi          #+#    #+#             */
-/*   Updated: 2025/01/15 15:52:31 by jowoundi         ###   ########.fr       */
+/*   Updated: 2025/01/17 15:52:07 by jowoundi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_putstr(char	*str)
 unsigned long	ft_hexlong(unsigned long nb)
 {
 	unsigned long		count;
-	char	*hex;
+	char				*hex;
 
 	count = 0;
 	hex = "0123456789abcdef";
